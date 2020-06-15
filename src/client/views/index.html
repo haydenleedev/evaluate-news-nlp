@@ -2,36 +2,37 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title>Test</title>
+        <title>Natural Language Processing Project</title>
     </head>
 
     <body>
 
         <header>
             <div class="">
-                Logo
+                NLP
             </div>
-            <div class="">
-                navigation
-            </div>
+   
         </header>
 
         <main>
+            
             <section>
-                <form class="" onsubmit="return handleSubmit(event)">
-                    <input id="name" type="text" name="input" value="" onblur="onBlur()" placeholder="Name">
-                    <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return handleSubmit(event)">
+                <h1>Natural Language Processing Project</h1>
+                <div class="overview">Please Enter a URL address</div>
+                <form onsubmit="return Client.handleSubmit(event)">
+                    <input id="text" type="text" name="input" value="" placeholder="https://www.webpage.com/" onblur="Client.onBlur()">
+                    <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
                 </form>
             <section>
 
             <section>
-                <strong>Form Results:</strong>
+                <p class="form-results">Form Results:</p>
                 <div id="results"></div>
             </section>
         </main>
 
         <footer>
-            <p>This is a footer</p>
+            <p>© 2020, Natural Language Processing Project.</p>
         </footer>
 
     </body>

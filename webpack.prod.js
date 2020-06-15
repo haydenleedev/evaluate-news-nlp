@@ -8,6 +8,10 @@ const TerserPlugin = require('terser-webpack-plugin');
 module.exports = {
     entry: './src/client/index.js',
     mode: 'production',
+    output: {
+        libraryTarget: 'var',
+        library: 'Client'  // All of our javascipt code is accessible through this Client library.
+    },
     module: {
         rules: [
             {
